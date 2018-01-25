@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-import Layout from "./Layout.js";
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -16,84 +14,80 @@ justify-content center;
 const Table = styled.table`
   border-collapse: collapse;
   width: 100%;
+  border-bottom: 1px solid gray;
 `;
-/*
-  table,
-  th,
-  td {
-    border-bottom: 1px solid gray;
-  }
-  th {
-    text-align: left;
-  }
-  td {
-    padding-top: 5px;
-  }
-  tr:nth-child(even) {
+const Th = styled.th`
+  border-bottom: 1px solid gray;
+  text-align: left;
+`;
+const Td = styled.td`
+  border-bottom: 1px solid gray;
+  padding-top: 5px;
+`;
+const Tr = styled.tr`
+  &:nth-child(even) {
     background-color: #f2f2f2;
   }
-  tr:hover {
+  &:hover {
     background-color: aqua;
   }
-*/
+`;
 export default props => (
-  <Layout active="cars">
-    <Container>
-      <Date>
-        <h3>Start Your Engins</h3>
-      </Date>
-      <Table>
-        <tbody>
-          <tr>
-            <th>Driver</th>
-            <th>Car</th>
-            <th>Passangers</th>
-            <th>Cnt</th>
-          </tr>
-          <tr>
-            <td>Corey</td>
-            <td>Sliver Pilot</td>
-            <td>Anh, Paulyne Tam, An, Kevin, Nguyen</td>
-            <td>7</td>
-          </tr>
-          <tr>
-            <td>Cheryl</td>
-            <td>Black Tacoma</td>
-            <td>Jason, Frank, Eileen</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Brian</td>
-            <td>White Civic</td>
-            <td>Cermony Only</td>
-            <td>1</td>
-          </tr>
-          <tr>
-            <td>Bobby</td>
-            <td>White Civic</td>
-            <td>Deanna, Todd</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Debbie</td>
-            <td>Rental</td>
-            <td>Alex, Leona, Teresa</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Cyril</td>
-            <td>Rental</td>
-            <td>Joyce, Tina, Carlton</td>
-            <td>4</td>
-          </tr>
-          <tr>
-            <td>Jeff</td>
-            <td>Rental</td>
-            <td>Wendy, Sabrina, Eli</td>
-            <td>4</td>
-          </tr>
-        </tbody>
-      </Table>
-    </Container>
-  </Layout>
+  <Container>
+    <Date>
+      <h3>Start Your Engins</h3>
+    </Date>
+    <Table>
+      <tbody>
+        <Tr>
+          <Th>Driver</Th>
+          <Th>Car</Th>
+          <Th>Passangers</Th>
+          <Th>Cnt</Th>
+        </Tr>
+        <Tr>
+          <Td>Corey</Td>
+          <Td>Sliver Pilot</Td>
+          <Td>Anh, Paulyne Tam, An, Kevin, Nguyen</Td>
+          <Td>7</Td>
+        </Tr>
+        <Tr>
+          <Td>Cheryl</Td>
+          <Td>Black Tacoma</Td>
+          <Td>Jason, Frank, Eileen</Td>
+          <Td>4</Td>
+        </Tr>
+        <Tr>
+          <Td>Brian</Td>
+          <Td>White Civic</Td>
+          <Td>Cermony Only</Td>
+          <Td>1</Td>
+        </Tr>
+        <Tr>
+          <Td>Bobby</Td>
+          <Td>White Civic</Td>
+          <Td>Deanna, Todd</Td>
+          <Td>3</Td>
+        </Tr>
+        <Tr>
+          <Td>Debbie</Td>
+          <Td>Rental</Td>
+          <Td>Alex, Leona, Teresa</Td>
+          <Td>4</Td>
+        </Tr>
+        <Tr>
+          <Td>Cyril</Td>
+          <Td>Rental</Td>
+          <Td>Joyce, Tina, Carlton</Td>
+          <Td>4</Td>
+        </Tr>
+        <Tr>
+          <Td>Jeff</Td>
+          <Td>Rental</Td>
+          <Td>Wendy, Sabrina, Eli</Td>
+          <Td>4</Td>
+        </Tr>
+      </tbody>
+    </Table>
+  </Container>
 );

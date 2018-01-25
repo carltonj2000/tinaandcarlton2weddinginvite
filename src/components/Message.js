@@ -9,7 +9,8 @@ const Container = styled.div`
   opacity: 0.5;
   background: lightyellow;
   width: 100%;
-  padding: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin-bottom: 20px;
 `;
 

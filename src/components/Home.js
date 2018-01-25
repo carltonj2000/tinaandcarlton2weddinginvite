@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { BrowserRouter as Router } from "react-router-dom";
 
-import Layout from "./Layout.js";
 import Location from "./Location.js";
 import Quotes from "./Quotes.js";
 import Photos from "./Photos.js";
@@ -44,17 +42,15 @@ class Home extends Component {
      **/
     return (
       <Container>
-        <Layout active="home">
-          <PhotoModal
-            show={this.state.isOpen}
-            onClose={this.closeModal}
-            img={this.state.img}
-            nextImg={this.nextImg}
-          />
-          <Location />
-          <Quotes />
-          <Photos images={images} photoModalOpen={this.openModal} />
-        </Layout>
+        <PhotoModal
+          show={this.state.isOpen}
+          onClose={this.closeModal}
+          img={this.state.img}
+          nextImg={this.nextImg}
+        />
+        <Location />
+        <Quotes />
+        <Photos images={images} photoModalOpen={this.openModal} />
       </Container>
     );
   }

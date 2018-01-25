@@ -27,15 +27,13 @@ const Col2 = styled.div`
 `;
 
 export default () => (
-  <div>
-    <Container>
-      <Col1>
-        <div>Where &amp; When?</div>
-      </Col1>
-      <Col2>
-        <div>Las Vegas</div>
-        <div>January 18th, 2018</div>
-      </Col2>
-    </Container>
-  </div>
+  <Container>
+    <Col1>
+      <div>Where &amp; When?</div>
+    </Col1>
+    <Col2>
+      <div>Las Vegas</div>
+      <div>January 18th, 2018</div>
+    </Col2>
+  </Container>
 );
