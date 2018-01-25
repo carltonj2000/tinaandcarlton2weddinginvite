@@ -12,10 +12,10 @@ const Container = styled.div`
   margin: 5px;
 `;
 
-export default ({ children, active }) => (
+export default ({ children }) => (
   <Container>
     <Meta />
-    <Header active={active} />
+    <Header />
     {children}
     <Footer />
   </Container>

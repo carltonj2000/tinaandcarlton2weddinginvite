@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import { Routes } from "../utils/routes";
 
@@ -13,14 +13,27 @@ const Container = styled.div`
   background: lightyellow;
   padding: 10px;
 `;
+const style = {
+  fontFamily: "Arial",
+  fontWeight: "bold",
+  margin: "5px",
+  textDecoration: "none",
+  color: "darkgoldenrod"
+};
+const styleActive = {
+  textDecoration: "underline overline",
+  color: "green"
+};
 
-export default props => (
-  <div>
-    <Container>
-      <Link to={Routes.cars}>Cars</Link>
-      <Link to={Routes.home}>Home</Link>
-    </Container>
-  </div>
+export default () => (
+  <Container>
+    <NavLink exact to={Routes.home} style={style} activeStyle={styleActive}>
+      Home
+    </NavLink>
+    <NavLink to={Routes.cars} style={style} activeStyle={styleActive}>
+      Cars
+    </NavLink>
+  </Container>
 );
 
 /*

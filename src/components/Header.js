@@ -22,9 +22,9 @@ const Container = styled.div`
   ${media.tablet`height: 300px`};
 `;
 
-export default ({ active }) => (
+export default () => (
   <Container>
-    <Navigation active={active} />
+    <Navigation />
     <Message />
   </Container>
 );
