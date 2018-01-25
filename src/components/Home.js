@@ -43,21 +43,19 @@ class Home extends Component {
      * console.log(process.env.PUBLIC_URL);
      **/
     return (
-      <Router>
-        <Container>
+      <Container>
+        <Layout active="home">
           <PhotoModal
             show={this.state.isOpen}
             onClose={this.closeModal}
             img={this.state.img}
             nextImg={this.nextImg}
           />
-          <Layout active="home">
-            <Location />
-            <Quotes />
-            <Photos images={images} photoModalOpen={this.openModal} />
-          </Layout>
-        </Container>
-      </Router>
+          <Location />
+          <Quotes />
+          <Photos images={images} photoModalOpen={this.openModal} />
+        </Layout>
+      </Container>
     );
   }
 }

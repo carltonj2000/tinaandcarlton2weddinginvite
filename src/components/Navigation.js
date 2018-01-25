@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+import { Routes } from "../utils/routes";
+
 const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -15,10 +17,8 @@ const Container = styled.div`
 export default props => (
   <div>
     <Container>
-      <Router>
-        <Link to="/">Cars</Link>
-        <Link to="/cars">Home</Link>
-      </Router>
+      <Link to={Routes.cars}>Cars</Link>
+      <Link to={Routes.home}>Home</Link>
     </Container>
   </div>
 );

@@ -15,10 +15,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "rsync": "rsync -avzL out/ carltonjoseph.com:/mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite/",
+    "rsync":
+      "rsync -avzL out/ carltonjoseph.com:/mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite/",
     "toserver": "build && export rsync"
   },
   "homepagelocal": "https://tinaandcarltonhome.com/weddinginvite",
   "homepageweb": "https://tinaandcarlton.com/weddinginvite",
-  "homepage": "https://tinaandcarlton.com/weddinginvite"
+  "homepage": "https://tinaandcarltonhome.com/weddinginvite"
 }
