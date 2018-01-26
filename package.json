@@ -15,6 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
+    "find": "node scripts/find.js",
     "rsync":
       "rsync -avzL build/ carltonjoseph.com:/mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite/",
     "toserver": "npm run build && npm run rsync"

@@ -2,8 +2,6 @@ import React from "react";
 
 import { Container, Date, Table, Th, Tr, Td } from "../utils/style-utils.js";
 
-console.log(Container);
-
 export default props => (
   <Container>
     <Date>
