@@ -30,6 +30,12 @@ export default () => (
     <NavLink exact to={Routes.home} style={style} activeStyle={styleActive}>
       Home
     </NavLink>
+    <NavLink to={Routes.directions} style={style} activeStyle={styleActive}>
+      Directions
+    </NavLink>
+    <NavLink to={Routes.schedule} style={style} activeStyle={styleActive}>
+      Schedule
+    </NavLink>
     <NavLink to={Routes.cars} style={style} activeStyle={styleActive}>
       Cars
     </NavLink>
