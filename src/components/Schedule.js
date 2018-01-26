@@ -1,39 +1,8 @@
 import React from "react";
-import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Routes } from "../utils/routes";
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  background: white;
-`;
-const Date = styled.div`
-display: flex;
-background: aqua;
-justify-content center;
-`;
-const Table = styled.table`
-  border-collapse: collapse;
-  width: 100%;
-  border-bottom: 1px solid gray;
-`;
-const Th = styled.th`
-  border-bottom: 1px solid gray;
-  text-align: left;
-`;
-const Td = styled.td`
-  border-bottom: 1px solid gray;
-  padding-top: 5px;
-`;
-const Tr = styled.tr`
-  &:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  &:hover {
-    background-color: aqua;
-  }
-`;
+import { Container, Date, Table, Th, Tr, Td } from "../utils/style-utils.js";
 
 export default props => (
   <Container>

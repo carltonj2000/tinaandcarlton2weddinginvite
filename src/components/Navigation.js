@@ -36,8 +36,14 @@ export default () => (
     <NavLink to={Routes.schedule} style={style} activeStyle={styleActive}>
       Schedule
     </NavLink>
+    <NavLink to={Routes.seating} style={style} activeStyle={styleActive}>
+      Seating
+    </NavLink>
     <NavLink to={Routes.cars} style={style} activeStyle={styleActive}>
       Cars
+    </NavLink>
+    <NavLink to={Routes.support} style={style} activeStyle={styleActive}>
+      Support
     </NavLink>
   </Container>
 );
