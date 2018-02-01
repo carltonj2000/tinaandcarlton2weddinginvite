@@ -18,11 +18,13 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "find": "node scripts/find.js",
-    "rsync": "rsync -avzL build/ carltonjoseph.com:/mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite/",
+    "rsync":
+      "rsync -avzL ./ carltonjoseph.com:/mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite/",
     "toserver": "npm run build && npm run rsync",
     "start:server": "node server.js",
     "docker:build": "docker build -t weddinginvite .",
-    "docker:run": "docker run --name weddinginvite1 -p 49160:5000 -d weddinginvite",
+    "docker:run":
+      "docker run --name weddinginvite1 -p 49160:5000 -d weddinginvite",
     "docker:it": "docker exec -it weddinginvite1 /bin/bash",
     "view:local:api": "google-chrome http://localhost:5000/api/passwords",
     "view:docker:api": "google-chrome http://localhost:49160/api/passwords",
@@ -32,5 +34,5 @@
   },
   "homepagelocal": "https://tinaandcarltonhome.com/weddinginvite",
   "homepageweb": "https://tinaandcarlton.com/weddinginvite",
-  "homepage": "https://tinaandcarltonhome.com/weddinginvite"
+  "homepage": "https://tinaandcarlton.com/weddinginvite"
 }
