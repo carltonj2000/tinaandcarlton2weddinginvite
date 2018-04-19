@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "find": "node scripts/find.js",
     "rsync":
-      "rsync -avzL ./ carltonjoseph.com:/mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite/",
+      "rsync -avzL --exclude='node_modules' --exclude='.git' ./ carltonjoseph.com:/mnt/volume-sfo2-01/cj/tinaandcarltondotcom/weddinginvite/",
     "toserver": "npm run build && npm run rsync",
     "start:server": "node server.js",
     "docker:build": "docker build -t weddinginvite .",
