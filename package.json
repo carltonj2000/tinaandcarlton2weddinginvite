@@ -29,10 +29,11 @@
     "view:docker": "google-chrome http://localhost:49160",
     "local:api": "concurrently \"npm run start\" \"npm run view:local:api\"",
     "docker:api": "concurrently \"npm run view:docker:api\"",
-    "rsync:mntssd": "rsync -a build/ /Volumes/cjs/cj/volume_sfo2_02/cj/tinaandcarlton/weddinginvite/"
+    "rsync:mntssd": "rsync -a build/ /Volumes/cjs/cj/volume_sfo2_02/cj/tinaandcarlton/weddinginvite/",
+    "rsync:dolocal": "rsync -a build/ /mnt/volume_sfo2_02/cj/tinaandcarlton/weddinginvite/"
   },
   "homepagelocal": "https://tinaandcarltonhome.com/weddinginvite",
   "homepageweb": "https://tinaandcarlton.com/weddinginvite",
-  "homepage": "https://tinaandcarlton.test/weddinginvite",
+  "homepage": "http://tinaandcarlton.test/weddinginvite",
   "homepagelocal1": "https://tinaandcarlton.test/weddinginvite"
 }
